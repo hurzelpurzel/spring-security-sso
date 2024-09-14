@@ -45,7 +45,7 @@ class WebSecurityConfig extends AbstractHttpConfigurer<WebSecurityConfig, HttpSe
             .authenticationEntryPoint(spnegoEntryPoint())
             .and()
             .authorizeRequests()
-            .antMatchers("/", "/home")
+            .requestMatchers("/", "/home")
             .permitAll()
             .anyRequest()
             .authenticated()

@@ -1,0 +1,7 @@
+/home/pottmeier/ing/spring-security-sso/src/main/java/com/baeldung/intro/Application.java
+/home/pottmeier/ing/spring-security-sso/src/main/java/com/baeldung/intro/config/WebSecurityConfig.java
+/home/pottmeier/ing/spring-security-sso/src/main/java/com/baeldung/intro/security/DummyUserDetailsService.java
+/home/pottmeier/ing/spring-security-sso/src/main/java/kerberos/server/KerberizedServerApp.java
+/home/pottmeier/ing/spring-security-sso/src/main/java/kerberos/server/config/MvcConfig.java
+/home/pottmeier/ing/spring-security-sso/src/main/java/kerberos/server/config/WebSecurityConfig.java
+/home/pottmeier/ing/spring-security-sso/src/main/java/kerberos/server/service/DummyUserDetailsService.java

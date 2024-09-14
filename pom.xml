@@ -4,18 +4,33 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <artifactId>spring-security-sso-kerberos</artifactId>
-
-    <parent>
-        <groupId>com.baeldung</groupId>
-        <artifactId>spring-security-oauth2-sso</artifactId>
-        <version>1.0.0-SNAPSHOT</version>
-    </parent>
-
+    <groupId>com.baeldung.intro</groupId>
+    <version>0.1.0</version>
+   <parent>
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>3.3.3</version>
+    <relativePath/> <!-- lookup parent from repository -->
+  </parent>
+<properties>
+        
+        <start-class>com.baeldung.intro.Application</start-class>
+        <spring-security-kerberos.version>1.0.1.RELEASE</spring-security-kerberos.version>
+        
+    </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
+         <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        
+
+
+
         <dependency>
             <groupId>org.springframework.security.kerberos</groupId>
             <artifactId>spring-security-kerberos-web</artifactId>
@@ -26,11 +41,7 @@
             <artifactId>spring-security-kerberos-client</artifactId>
             <version>${spring-security-kerberos.version}</version>
         </dependency>
-        <dependency>
-            <groupId>org.apache.directory.jdbm</groupId>
-            <artifactId>apacheds-jdbm1</artifactId>
-            <version>${apacheds-jdbm1.version}</version>
-        </dependency>
+        
         <dependency>
             <groupId>org.springframework.security.kerberos</groupId>
             <artifactId>spring-security-kerberos-test</artifactId>
@@ -65,6 +76,18 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-thymeleaf</artifactId>
         </dependency>
+    
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-webmvc</artifactId>
+        <version>5.1.9.RELEASE</version>
+      </dependency>
+    
+      <dependency>
+        <groupId>org.springframework</groupId>
+        <artifactId>spring-webmvc</artifactId>
+        <version>5.1.9.RELEASE</version>
+      </dependency>
     </dependencies>
 
     <build>
@@ -92,8 +115,5 @@
         </plugins>
     </build>
 
-    <properties>
-        <start-class>com.baeldung.intro.Application</start-class>
-    </properties>
 
 </project>
